@@ -1,0 +1,413 @@
+   @font-face {
+       font-family: 'Netflix Sans';
+       src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),
+            url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff');
+   }
+
+   @font-face {
+       font-family: 'Netflix Sans';
+       font-weight: 400;
+       src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),
+            url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff');
+   }
+
+   @font-face {
+       font-family: 'Netflix Sans';
+       font-weight: 700;
+       src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),
+            url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff');
+   }
+
+   @font-face {
+       font-family: 'Netflix Sans';
+       font-weight: 800;
+       src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),
+            url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+   }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.main {
+position: relative;
+height:710px;
+background-size: cover;
+background-position: center;
+/* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8)); */
+z-index: 2;
+background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.725) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%),
+ url(image.png); 
+    /* background-image: 
+    linear-gradient(7deg, rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0.6) 97%),  */
+   
+}
+.main::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url(image.png);
+background-size: cover;
+background-position: center;
+background-color: rgba(0, 0, 0, 0.85);
+opacity: 1;
+filter: brightness(0.4) contrast(1.1);
+z-index: 1;
+
+}
+.nav {
+display: flex;
+max-height: 100px;
+max-width: 1373px;
+justify-content: center;
+position: relative;
+z-index: 2; 
+justify-content: space-between;
+align-items: center;      
+padding: 20px;
+gap: 20px;
+}
+.x1 {
+    max-height: 40px; 
+    width: 390px; 
+      }
+      .x2{
+        width: autopx;
+        display: flex;
+        justify-content: flex-end;
+      padding-right: 0px; 
+      
+      /* border: solid black 2px; */
+      }
+      .x3{
+      border: solid rgba(146, 143, 143, 0.596) .5px;
+      padding: 5px 20px;
+      border-radius: 5px;
+      align-items: center;
+      margin: 0 20px;
+      color: white;
+      font-weight:400 ;
+      background-color: rgba(0, 0, 0, 0.46);
+      cursor: pointer;
+
+      }
+      .x4{
+      /* border: solid black 2px; */
+      padding: 5px 13px;
+      border-radius: 5px;
+      color: white;
+      background-color: red;
+      font-weight: bold;
+      cursor: pointer;
+      }
+.x5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  max-width: 35rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+
+}
+.x6{
+  font-size: 55px;
+  font-weight:900;
+}
+.x7{
+  font-weight: 500;
+font-size: 20px;
+padding-top: 24px;
+}
+.x8{
+height: 100px;
+/* background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black; */
+padding-top: 40px;
+font-size: 1rem;
+
+}
+.email2{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    display: flex;
+    gap: 8px;
+transform: translateY(-56px);
+justify-content: center;
+align-content: center;
+
+}
+.main2{
+color: white;
+height: auto;
+background-color: black;
+}
+/* .x9{
+padding: 40px 160px ;
+font-size: 24px;
+font-weight: 600;
+background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%); z-index: -1;
+margin-top: -.25rem;
+} */
+.curve-svg {
+  position: absolute;
+  top: -20px; /* Adjust this value to control the vertical position */
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1; /* Ensure it is behind the text but above the background */
+}
+
+.x9 {
+  position: relative; /* Ensure the text is positioned correctly */
+  padding: 40px 160px;
+  font-size: 24px;
+  font-weight: 600;
+  background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+  margin-top: 0; /* Adjust margin as needed */
+  z-index: 2; /* Ensure text is above the SVG */
+}
+.scroll{
+display: flex;
+/* border: solid white 2px; */
+max-width: 1200px;
+align-content: center;
+justify-content: space-around;
+overflow-y: hidden;
+ overflow-x: scroll ;
+ margin: 0 auto;
+ scrollbar-width: thin; 
+ scrollbar-color: white black;
+}
+.x10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid white 1px;
+  min-width: 180px;
+  height: 252px;
+  margin: 5px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background 0.3s ease-in-out;
+}
+
+.x10:hover {
+  background-image: var(--bg-image); /* Dynamically set background image */
+}
+
+.x10 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.x10:hover img {
+  opacity: 0; /* Hide the image on hover */
+}
+.main3{
+display: flex;
+max-width: 1200px;
+align-content: center;
+justify-content: space-around;
+margin: 0 auto;
+gap: 16px;
+flex-wrap:inherit;
+}
+.x11{
+font-size: 1.5rem;
+font-weight: 500;
+padding: 50px 0 20px 160px;
+}
+.x12{
+width: 258px;
+height: 258px;
+padding:20px;
+border-radius: 20px;
+background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+position: relative;
+}
+.svg3{
+  position: absolute;
+  bottom:16px ;
+  right: 16px;
+}
+.x13{
+font-size: 1.5rem;
+font-weight: 500;
+padding: 0 0 20px 0;
+}
+.faq {
+display: flex;
+max-width: 1200px;
+flex-direction: column;
+/* align-items: center; */
+justify-content: center; 
+margin: 0 auto;
+/* text-align: center;  */
+gap: 10px; 
+}
+.x15{
+padding: 1.5rem;
+background-color: rgb(45, 45, 45);
+font-size:24px;
+display: flex;
+justify-content: space-between;
+}
+.email{
+padding: 12px;
+background-color: rgba(36, 31, 31, 0.441);
+/* opacity: .5; */
+border: solid rgba(117, 108, 108, 0.685) 1px;
+border-radius: 4px;
+font-size: 16px;
+font-weight: 400;
+min-height: 16px;
+min-width: 16px;
+width: 344px;
+}
+.email::placeholder {
+color: white;
+opacity: .7;
+}
+.submit{
+padding:8px 16px;
+font-weight: 700;
+font-size: 1.4rem;
+background-color: red;
+border-radius: 4px;
+border: solid rgba(117, 108, 108, 0.685) 1px;
+color: white;
+cursor: pointer;
+ width: 195px;
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+.svg1{
+    transform: translateY(4px);
+    padding-left: 10px;
+
+}
+.x15:hover{
+    background-color: rgb(65, 61, 61);
+    transition: background-color 0.3s ease-out;
+    }
+.x15:hover .svg2{
+transform: rotatez(-45deg);
+transition:transform 0.3s ease-in-out; 
+} 
+.submit:hover{
+background-color: rgb(227, 0, 0);
+}
+.x4:hover{
+background-color: rgb(227, 0, 0);
+}
+.x16 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  max-width: 35rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+
+}
+.x17{
+  height: 100px;
+  /* background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black; */
+  padding-top: 80px;
+  font-size: 1rem;
+  
+  }
+  .email3{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    display: flex;
+    gap: 8px;
+transform: translateY(-56px);
+justify-content: center;
+align-content: center;
+
+}
+.email4{
+  padding: 12px;
+  background-color: rgba(36, 31, 31, 0.441);
+  /* opacity: .5; */
+  border: solid rgba(117, 108, 108, 0.685) 1px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 16px;
+  min-width: 16px;
+  width: 444px;
+  }
+  .email4::placeholder {
+  color: white;
+  opacity: .7;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .x18{
+padding:20px 0 40px 0;
+  }
+  .x19{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .x20{
+    flex-basis: 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  padding: 8px 0;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.703);
+  }
+  .x20 span{
+    cursor: pointer;
+
+  }
+  .x21{
+    border: solid rgba(146, 143, 143, 0.596) .5px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    align-items: center;
+    margin:48px 0px;
+    color: white;
+    font-weight:400 ;
+    background-color: rgba(0, 0, 0, 0.46);
+    width: fit-content;
+    cursor: pointer;
+  }
+  .x22{
+    color: rgba(255, 255, 255, 0.697);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+  }
